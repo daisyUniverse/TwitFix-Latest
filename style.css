@@ -8,6 +8,7 @@
     --ios-height: 100vh;
     --top-height: calc(6vh + 2vw);
  }
+
 body{
     margin: 0;
     width: 100vw;
@@ -16,15 +17,23 @@ body{
     overflow: hidden;
 } 
 
+
+a{
+    color: unset;
+    text-decoration: unset;
+}
+
 a,
 a:link,
 a:focus,
 a:visited,
 a:active,
-a:-webkit-any-link {
+a:-webkit-any-link,
+:link{
     color: unset;
-    text-decoration: none;
+    text-decoration: unset;
 }
+
 a:hover{
     color: #8ebf42;
 }
