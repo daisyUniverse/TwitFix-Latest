@@ -43,10 +43,10 @@ window.onload = () => {
 }
 
 function addCookie(name, state) {
-    if (document.cookie.includes(name))
-        document.cookie = document.cookie.replace(`${name}=${!state}`, `${name}=${state}`);
+    if (state)
+        document.cookie = `${name}=${state}; max-age=15780000; SameSite=None; Secure`;
     else
-        document.cookie += `${name}=${state}; max-age=15780000; SameSite=None; Secure`;
+        document.cookie = `${name}=`;
 }
 
 function cookieTime() {
